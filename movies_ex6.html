@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Webpage HTML document for Lab 03.
+  EECS 1012; York University; Lassonde School of Engineering. 
+  Date: January 31st 2024 -->
+<html lang="En">
+
+<head>
+  <meta charset="UTF-8">
+  <title> EECS1012: Lab 3 </title>
+  <link rel="stylesheet" href="movies_ex1.css" type="text/css" >
+  <script src="movies_ex6.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>My Computational Thinking Kit</h1>
+    <nav>
+      <!-- creates 4 buttons for each movie -->
+      <button id = "but" type = "button" onclick = "p01Func()">Movie 1</button>
+      <button id = "butt" type = "button" onclick = "p02Func()">Movie 2</button>
+      <button id = "buttt" type = "button" onclick = "p03Func()">Movie 3</button>
+      <button id = "butttt" type = "button" onclick = "p04Func()">Movie 4</button>
+    </nav>
+  </header>
+
+  <!-- the pictures for the first movie -->
+  <div class="column1 poster">
+	  <input id="check1" type="checkbox" onclick = "checkUncheck1()"/> Movie
+ 	  <img id="poster" src="images/solaris/solaris_poster.jpg" alt="Poster"/>
+  </div>
+  <div class="column2 director">
+	  <input id="check2" type="checkbox" onclick = "checkUncheck2()"/> Director
+	  <img id="director" src="images/solaris/solaris_director.jpg" alt="Director" onclick="zoomOut()" ondblclick="zoomIn()"/>
+  </div>
+  <div class="column3 actors">
+	  <input id="check3" type="checkbox" onclick = "checkUncheck3()"/> Actors
+	  <img id="actors" src="images/solaris/solaris_actors.jpg" alt="Actors" />
+  </div>
+
+  <div id="description" class="description"></div>
+
+  <footer>(c) Author of this web page: <span>Tanvi Jain</span> </footer>
+</body>
+</html>
